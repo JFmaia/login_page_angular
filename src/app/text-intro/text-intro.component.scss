@@ -4,3 +4,32 @@ p{
   color: #FFFFFF;
   max-width: 680px;
 }
+
+// responsive
+
+@media screen and (max-width: 1080px){
+  p{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    max-width: 680px;
+  }
+}
+
+@media screen and (max-width: 920px){
+  p{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 440px){
+  p{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+  }
+}
