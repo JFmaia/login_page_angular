@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  public username:string = ""
 
+  updateUsername(newUsername:string){
+    this.username = newUsername;
+  }
 }
