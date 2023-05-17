@@ -1,3 +1,10 @@
-<p>
+<p *ngIf="username === ''; else elseBlock">
   Comece agora sua jornada no mundo <strong>dev,</strong>faça agora seu login e aproveite nosso curso <strong>gratuito!</strong>
 </p>
+
+<ng-template #elseBlock>
+  <p>
+    Muito bem <strong>{{username}}</strong>, agora é só partir para sua viajem pelo aprendizado!
+  </p>
+</ng-template>
+
