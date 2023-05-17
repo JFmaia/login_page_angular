@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-card-login',
@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-login.component.scss']
 })
 export class CardLoginComponent {
+  @Output() public enviarUsername = new EventEmitter;
+  public username: string;
 
+  constructor(){
+    this.username =""
+  }
+
+  public getUsername(username:string){
+    this.enviarUsername.emit(username);
+  }
 }
