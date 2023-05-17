@@ -1,6 +1,6 @@
 <div class="container-home">
   <section class="container home">
-    <app-text-intro></app-text-intro>
-    <app-card-login></app-card-login>
+    <app-text-intro [username]="username"></app-text-intro>
+    <app-card-login (enviarUsername)="updateUsername($event)"></app-card-login>
   </section>
 </div>
